@@ -1,0 +1,12 @@
+Cau 1:
+O trong code co the thay chuong trinh se break khi MEM = NULL vay ta co the dat breakpoint tai diem do voi code.
+(gbc) break memory_leak:c14 if MEM == 0
+
+Cau 2:
+ta dung lenh:
+(gbb) bt
+
+Cau 3: 
+Ta co the thay nguyen nhan gay ra loi Memory leak là do sau dong 
+int *MEM = (int*)malloc(sizeof(int)*10000);
+khong co lenh free(MEM) lam cho chuong trinh bi loi memory leak
